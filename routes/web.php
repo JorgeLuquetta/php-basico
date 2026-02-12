@@ -10,6 +10,10 @@ Route::get('/mi-nombre', function () {
     return "Jorge Andrés Luquetta Aguilera";
 });
 
+Route::get('/contactanos', function () {
+    return view("form");
+});
+
 Route::get('/php-basico', function () {
 
     echo "<h1 style= 'color:red'> Aprendiendo PHP </h1>";
@@ -44,7 +48,7 @@ Route::get('/php-basico', function () {
 
     $listaProductos = [$pc, $teclado];
 
-    foreach ($teclado as $item){
+    foreach ($listaProductos as $item){
         echo $item['name'] . "<br>";
     }
 
