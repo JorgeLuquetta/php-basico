@@ -2,115 +2,84 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+    <title>Formulario de Contacto</title>
 
+    <style>
         body {
-            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            height: 100vh;
+            margin: 0;
         }
 
-        .login-container {
+        .form-container {
             background: white;
-            padding: 40px;
-            width: 350px;
-            border-radius: 15px;
+            padding: 30px;
+            border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 350px;
         }
 
-        .login-container h2 {
+        h2 {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             color: #333;
         }
 
-        .input-group {
-            margin-bottom: 20px;
-        }
-
-        .input-group label {
+        label {
+            font-weight: bold;
             display: block;
             margin-bottom: 5px;
-            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
             font-size: 14px;
         }
 
-        .input-group input {
-            width: 100%;
-            padding: 10px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            outline: none;
-            transition: 0.3s;
-        }
-
-        .input-group input:focus {
+        input:focus, textarea:focus {
             border-color: #4e73df;
-            box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+            outline: none;
         }
 
-        .btn-login {
+        button {
             width: 100%;
             padding: 10px;
-            border: none;
-            border-radius: 8px;
             background: #4e73df;
             color: white;
+            border: none;
+            border-radius: 8px;
             font-size: 16px;
             cursor: pointer;
             transition: 0.3s;
         }
 
-        .btn-login:hover {
+        button:hover {
             background: #2e59d9;
-        }
-
-        .extra {
-            text-align: center;
-            margin-top: 15px;
-            font-size: 14px;
-        }
-
-        .extra a {
-            color: #4e73df;
-            text-decoration: none;
-        }
-
-        .extra a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <div class="login-container">
-        <h2>Iniciar Sesión</h2>
-        <form action="#" method="POST">
+    <div class="form-container">
+        <h2>Contáctanos</h2>
 
-            <div class="input-group">
-                <label for="email">Correo</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+        <form action="/store" method="GET">
 
-            <div class="input-group">
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" required>
-            </div>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
 
-            <button type="submit" class="btn-login">Ingresar</button>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
 
-            <div class="extra">
-                <p>¿Olvidaste tu contraseña? <a href="#">Recuperar</a></p>
-            </div>
+            <button type="submit">Enviar</button>
 
         </form>
     </div>
