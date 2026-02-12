@@ -1,5 +1,5 @@
 👋 ¡Hola! Soy Jorge Luquetta
-
+<p align="center"> <img src="img/profile.jpg" alt="Foto de perfil" width="150" /> </p>
 🚀 Sobre mí
 
 Soy un desarrollador apasionado por el Backend y la construcción de aplicaciones web robustas y escalables. Me especializo en el ecosistema de Laravel, creando APIs, sistemas administrativos y soluciones eficientes orientadas a buenas prácticas y arquitectura limpia.
@@ -45,7 +45,7 @@ Construyendo proyectos prácticos para fortalecer mi portafolio
 
 📫 Contacto
 
-💼 GitHub: (JorgeLuquetta)
+💼 GitHub: ([JorgeLuquetta](https://github.com/JorgeLuquetta))
 
 📧 Email: (jluquetta@unab.edu.co)
 
